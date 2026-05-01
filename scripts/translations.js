@@ -1,11 +1,4 @@
-/**
- * Offline i18n — English & Spanish copy for the portfolio template.
- * -----------------------------------------------------------------
- * Add or edit keys here; each key must exist in both `en` and `es`.
- * HTML elements use data-i18n="key" for one-to-one text replacement.
- */
 
-/* exported for main.js (global script) */
 var translations = {
   en: {
     page_title: "Developer Portfolio — Template",
