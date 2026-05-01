@@ -1,0 +1,6 @@
+Portfolio template — sample document
+====================================
+
+Replace this file with your CV (PDF), whitepapers, or other downloads.
+
+Keep paths in index.html (Media / Resources section) up to date.

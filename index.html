@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Developer Portfolio </title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+ 
+
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="nav-backdrop" data-nav-backdrop aria-hidden="true"></div>
+
+  <header class="site-header">
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <div class="header-inner">
+      <a class="logo nav-link" href="#hero" data-section="hero" data-i18n="brand">PORTFOLIO</a>
+
+      <nav class="site-nav" id="site-nav" data-nav aria-label="Primary">
+        <a class="nav-link" href="#hero" data-section="hero" data-i18n="nav_home">Home</a>
+        <a class="nav-link" href="#about" data-section="about" data-i18n="nav_about">About</a>
+        <a class="nav-link" href="#expertise" data-section="expertise" data-i18n="nav_expertise">Expertise</a>
+        <a class="nav-link" href="#skills" data-section="skills" data-i18n="nav_skills">Skills</a>
+        <a class="nav-link" href="#projects" data-section="projects" data-i18n="nav_projects">Projects</a>
+        <a class="nav-link" href="#experience" data-section="experience" data-i18n="nav_experience">Experience</a>
+        <a class="nav-link" href="#education" data-section="education" data-i18n="nav_education">Education</a>
+        <a class="nav-link" href="#certifications" data-section="certifications" data-i18n="nav_certs">Certs</a>
+        <a class="nav-link" href="#media" data-section="media" data-i18n="nav_media">Media</a>
+        <a class="nav-link" href="#connect" data-section="connect" data-i18n="nav_connect">Connect</a>
+
+        <div class="nav-tools nav-tools--mobile" aria-label="Settings">
+          <button type="button" class="tool-btn theme-toggle" data-theme-toggle aria-label="Toggle color theme">
+            <span class="theme-icon theme-icon--sun" aria-hidden="true">☀</span>
+            <span class="theme-icon theme-icon--moon" aria-hidden="true">☾</span>
+          </button>
+          <div class="lang-switch" role="group" data-lang-group aria-label="Choose language">
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-tools header-tools--desktop" aria-label="Settings">
+        <button type="button" class="tool-btn theme-toggle" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-icon theme-icon--sun" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon--moon" aria-hidden="true">☾</span>
+        </button>
+        <div class="lang-switch" role="group" data-lang-group-desktop aria-label="Choose language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+      </div>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" data-nav-toggle data-i18n-aria-open="aria_open_menu" data-i18n-aria-close="aria_close_menu"></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="section-inner hero-inner reveal">
+        <p class="badge" data-i18n="hero_badge">Available for opportunities</p>
+        <h1 class="hero-name" data-i18n="hero_name">Jesus Jair Jaramillo Reta</h1>
+        <p class="hero-title" data-i18n="hero_role">Computer Systems Engineer</p>
+        <p class="hero-intro" data-i18n="hero_intro">
+          Software developer focused on web and mobile development, building practical tools, automation systems, and reliable applications with an emphasis on software quality.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects" data-i18n="hero_btn_projects">View Projects</a>
+          <a class="btn btn-ghost" href="#connect" data-i18n="hero_btn_connect">Connect</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="about_title">About Me</h2>
+          <p class="section-lead" data-i18n="about_lead">Replace portrait, biography, and highlights with your content.</p>
+        </header>
+        <div class="about-layout">
+          <div class="about-photo card reveal">
+              
+            <div class="profile-placeholder">
+              <img src="assets/images/fotodeperfil.jpg" alt="Portrait" width="30" height="400" loading="lazy">
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="about-bio reveal" data-i18n="about_bio">
+              Biography placeholder — two or three sentences about your background and what you build.
+            </p>
+            <div class="about-highlights">
+              <article class="mini-card reveal">
+                <h3 class="mini-card__label" data-i18n="about_stat_years_label">Years experience</h3>
+                <p class="mini-card__value" data-i18n="about_stat_years_value">X+ years</p>
+              </article>
+              <article class="mini-card reveal">
+                <h3 class="mini-card__label" data-i18n="about_stat_areas_label">Main areas</h3>
+                <p class="mini-card__value" data-i18n="about_stat_areas_value">Backend · Web · Cloud</p>
+              </article>
+              <article class="mini-card reveal">
+                <h3 class="mini-card__label" data-i18n="about_stat_philo_label">Tech philosophy</h3>
+                <p class="mini-card__value" data-i18n="about_stat_philo_value">Ship small, learn fast, care about users.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="section">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="expertise_title">Knowledge / Expertise</h2>
+          <p class="section-lead" data-i18n="expertise_lead">Replace the cards below with your real expertise areas.</p>
+        </header>
+        <div class="grid cards-3">
+          <!-- EDIT: Duplicate or remove article.expertise-card; icons: assets/icons/ or inline SVG -->
+          <article class="card expertise-card reveal">
+           <div class="card-icon" aria-hidden="true">
+           <img src="assets/icons/iconpagweb.png" alt="Icono" class="icon-img">
+           </div>
+            <h3 data-i18n="exp_c1_t">Category A</h3>
+            <p data-i18n="exp_c1_d">One-line summary of an area you want to highlight.</p>
+          </article>
+          <article class="card expertise-card reveal">
+            <div class="card-icon" aria-hidden="true">
+           <img src="assets/icons/iconmovil.png" alt="Icono" class="icon-img">
+           </div>
+            <h3 data-i18n="exp_c2_t">Category B</h3>
+            <p data-i18n="exp_c2_d">Another expertise bucket — APIs, UX, DevOps, etc.</p>
+          </article>
+          <article class="card expertise-card reveal">
+            <div class="card-icon" aria-hidden="true">
+           <img src="assets/icons/iconapis.png" alt="Icono" class="icon-img">
+           </div>
+            <h3 data-i18n="exp_c3_t">Category C</h3>
+            <p data-i18n="exp_c3_d">Short description placeholder for this card.</p>
+          </article>
+          <article class="card expertise-card reveal">
+            <div class="card-icon" aria-hidden="true">
+           <img src="assets/icons/iconmachinelearning.png" alt="Icono" class="icon-img">
+           </div>
+            <h3 data-i18n="exp_c4_t">Category D</h3>
+            <p data-i18n="exp_c4_d">Replace text; keep cards concise for the grid.</p>
+          </article>
+          <article class="card expertise-card reveal">
+            <div class="card-icon" aria-hidden="true">
+           <img src="assets/icons/iconautomatizacion.png" alt="Icono" class="icon-img">
+           </div>
+            <h3 data-i18n="exp_c5_t">Category E</h3>
+            <p data-i18n="exp_c5_d">Optional fifth pillar of your profile.</p>
+          </article>
+          <article class="card expertise-card reveal">
+          <div class="card-icon" aria-hidden="true">
+           <img src="assets/icons/iconsoporte.png" alt="Icono" class="icon-img">
+           </div>            <h3 data-i18n="exp_c6_t">Category F</h3>
+            <p data-i18n="exp_c6_d">Sixth card — remove from HTML if you need fewer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="skills_title">Skills</h2>
+          <p class="section-lead" data-i18n="skills_lead">Adjust labels and data-level (0–100) on each skill row.</p>
+        </header>
+        <ul class="skill-list">
+          <li class="skill-row reveal">
+            <div class="skill-label"><span data-i18n="sk_1">Language / Framework A</span><span class="skill-pct">0%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+          </li>
+          <li class="skill-row reveal">
+            <div class="skill-label"><span data-i18n="sk_2">Tooling B</span><span class="skill-pct">0%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+          </li>
+          <li class="skill-row reveal">
+            <div class="skill-label"><span data-i18n="sk_3">Platform C</span><span class="skill-pct">0%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-level="65"></div></div>
+          </li>
+          <li class="skill-row reveal">
+            <div class="skill-label"><span data-i18n="sk_4">Data / Infra D</span><span class="skill-pct">0%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-level="60"></div></div>
+          </li>
+          <li class="skill-row reveal">
+            <div class="skill-label"><span data-i18n="sk_5">Testing E</span><span class="skill-pct">0%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-level="65"></div></div>
+          </li>
+          <li class="skill-row reveal">
+            <div class="skill-label"><span data-i18n="sk_6">Process / Collaboration F</span><span class="skill-pct">0%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="projects_title">Projects</h2>
+          <p class="section-lead" data-i18n="projects_lead">.</p>
+        </header>
+        <div class="grid cards-2">
+
+          <article class="card project-card reveal">
+          <div class="project-thumb">
+          <img src="assets/images/colaboracionaplicaciondeprediccionincendios.jpg" alt="App de prediccion de incendios" class="project-img">
+          </div>
+          
+            <div class="card-body">
+              <h3 data-i18n="p1_t">Project Alpha</h3>
+              <p data-i18n="p1_d">Short summary — problem, your role, and outcome.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">SciKit-learn</span><span class="tag">Kotlin</span></div>
+              <a class="btn btn-small btn-primary" href="#" target="_blank" rel="noopener" data-i18n="proj_open">Open project</a>
+            </div>
+          </article>
+
+         <article class="card project-card reveal">
+          <div class="project-thumb">
+          <img src="assets/images/Diagramadenavegacionadoptree.jpg" alt="App de prediccion de incendios" class="project-img">
+          </div>
+          
+            <div class="card-body">
+              <h3 data-i18n="p2_t">Project Beta</h3>
+              <p data-i18n="p2_d">Another card — use a real screenshot when ready.</p>
+              <div class="tags"><span class="tag">Kotlin</span><span class="tag">API REST</span><span class="tag">Jetpack Compose</span></div>
+              <a class="btn btn-small btn-primary" href="#" target="_blank" rel="noopener" data-i18n="proj_open">Open project</a>
+            </div>
+          </article>
+         
+         <article class="card project-card reveal">
+          <div class="project-thumb">
+          <img src="assets/images/Pagweb.jpg" alt="App de prediccion de incendios" class="project-img">
+          </div>
+            
+            <div class="card-body">
+              <h3 data-i18n="p3_t">Project Gamma</h3>
+              <p data-i18n="p3_d">Describe stack and impact in two lines.</p>
+              <div class="tags"><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+              <a class="btn btn-small btn-primary" href="#" target="_blank" rel="noopener" data-i18n="proj_open">Open project</a>
+            </div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-thumb"><span class="thumb-placeholder" data-i18n="thumb_project">Image placeholder</span></div>
+            <div class="card-body">
+              <h3 data-i18n="p4_t">Project Delta</h3>
+              <p data-i18n="p4_d">Duplicate this block in HTML for more projects.</p>
+              <div class="tags"><span class="tag">Chatbot probably</span></div>
+              <a class="btn btn-small btn-primary" href="#" target="_blank" rel="noopener" data-i18n="proj_open">Open project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. PARTICIPATION / EXPERIENCE ========== -->
+    <section id="experience" class="section section-alt">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="experience_title">Participation / Experience</h2>
+          <p class="section-lead" data-i18n="experience_lead">Timeline entries — roles, events, open-source, or community work.</p>
+        </header>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 data-i18n="ex_1_t">Role or initiative</h3>
+              <p class="timeline-meta" data-i18n="ex_1_m">Company · Open Source · Event</p>
+              <p class="timeline-date" data-i18n="ex_1_dt">20XX — Present</p>
+              <p data-i18n="ex_1_b">What you shipped, led, or contributed — one or two lines.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 data-i18n="ex_2_t">Collaboration / milestone</h3>
+              <p class="timeline-meta" data-i18n="ex_2_m">Team · Community · Client</p>
+              <p class="timeline-date" data-i18n="ex_2_dt">20XX</p>
+              <p data-i18n="ex_2_b">Placeholder for talks, hackathons, or advisory work.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 data-i18n="ex_3_t">Earlier chapter</h3>
+              <p class="timeline-meta" data-i18n="ex_3_m">Organization name</p>
+              <p class="timeline-date" data-i18n="ex_3_dt">20XX — 20XX</p>
+              <p data-i18n="ex_3_b">Summarize scope; keep the timeline easy to scan.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 data-i18n="ex_4_t">Earlier chapter</h3>
+              <p class="timeline-meta" data-i18n="ex_4_m">Organization name</p>
+              <p class="timeline-date" data-i18n="ex_4_dt">20XX — 20XX</p>
+              <p data-i18n="ex_4_b">Summarize scope; keep the timeline easy to scan.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3 data-i18n="ex_5_t">Earlier chapter</h3>
+              <p class="timeline-meta" data-i18n="ex_5_m">Organization name</p>
+              <p class="timeline-date" data-i18n="ex_5_dt">20XX — 20XX</p>
+              <p data-i18n="ex_5_b">Summarize scope; keep the timeline easy to scan.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== 7. STUDIES / EDUCATION ========== -->
+    <section id="education" class="section">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="education_title">Studies / Education</h2>
+          <p class="section-lead" data-i18n="education_lead">Edit institution, degree, and years below.</p>
+        </header>
+        <div class="grid cards-2">
+          <article class="card education-card reveal">
+            <h3 data-i18n="edu_1_school">University or Bootcamp Name</h3>
+            <p class="edu-degree" data-i18n="edu_1_deg">Degree / Program Title</p>
+            <p class="edu-years" data-i18n="edu_1_y">20XX — 20XX</p>
+            <p class="edu-notes" data-i18n="edu_1_n">Honors, focus area, or thesis — optional line.</p>
+          </article>
+          <article class="card education-card reveal">
+            <h3 data-i18n="edu_2_school">Second institution (optional)</h3>
+            <p class="edu-degree" data-i18n="edu_2_deg">Certificate / Minor / Exchange</p>
+            <p class="edu-years" data-i18n="edu_2_y">20XX</p>
+            <p class="edu-notes" data-i18n="edu_2_n">Remove this card from HTML if not needed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. CERTIFICATIONS ========== -->
+    <section id="certifications" class="section section-alt">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="certs_title">Certifications</h2>
+          <p class="section-lead" data-i18n="certs_lead">Add certificate images to certificates/ and reference them below.</p>
+        </header>
+
+        <div class="grid cards-3 cert-grid">
+          <!-- EDIT: Certificate thumbnails — use <img src="certificates/..."> inside .cert-thumb -->
+          <article class="card cert-card reveal">
+            <div class="cert-thumb">
+            <img src="certificates/analisisdedatoscert.jpg" alt="Certificado" class="cert-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="cert_1_n">Certificate A</h3>
+              <p class="cert-issuer" data-i18n="cert_1_i">Issuer name</p>
+              <p class="cert-year" data-i18n="cert_1_y">20XX</p>
+            </div>
+          </article>
+          <article class="card cert-card reveal">
+          <div class="cert-thumb">
+         <img src="certificates/intermediatepycert.jpg" alt="Certificado" class="cert-img" loading="lazy">
+          </div>            
+          <div class="card-body">
+              <h3 data-i18n="cert_2_n">Certificate B</h3>
+              <p class="cert-issuer" data-i18n="cert_2_i">Issuer name</p>
+              <p class="cert-year" data-i18n="cert_2_y">20XX</p>
+            </div>
+          </article>
+          <article class="card cert-card reveal">
+          <div class="cert-thumb">
+          <img src="certificates/pythoncorecert.jpg" alt="Certificado" class="cert-img" loading="lazy">
+          </div>            
+          <div class="card-body">
+              <h3 data-i18n="cert_3_n">Certificate C</h3>
+              <p class="cert-issuer" data-i18n="cert_3_i">Issuer name</p>
+              <p class="cert-year" data-i18n="cert_3_y">20XX</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 9. MEDIA / RESOURCES ========== -->
+    <section id="media" class="section">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="media_title">Media / Resources</h2>
+          <p class="section-lead" data-i18n="media_lead">Drop files into assets/images, assets/videos, and docs/.</p>
+        </header>
+
+        <div class="media-block reveal">
+          <h3 class="media-subhead" data-i18n="media_images">Images</h3>
+          <div class="media-row">
+
+            <figure class="media-figure">
+            <img src="assets/images/Claseintroductoriapadres_alumnos.jpeg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s1">Texto de respaldo</figcaption>            
+            </figure>
+            
+             <figure class="media-figure">
+            <img src="assets/images/instalaciondeimpresoras3d.jpeg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s2">Texto de respaldo</figcaption>  
+            </figure>
+            
+            <figure class="media-figure">
+            <img src="assets/images/mantenimientopreventivopc.jpeg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s3">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/revisiondecableadoensite.jpeg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s4">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/reparaciondepiezatarjetagrafica.jpeg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s5">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/proyectorelojdigital.jpeg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s6">Texto de respaldo</figcaption>  
+            </figure>
+            
+            <figure class="media-figure">
+            <img src="assets/images/bocetoadoptreeweb.png" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s7">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/bocetosaplicacionmovil.png" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s8">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/disenioodepaneldecontrol.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s9">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/disenioforodigital.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s10">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/disenioopaginawebtienda.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s11">Texto de respaldo</figcaption>  
+            </figure>
+
+          <figure class="media-figure">
+            <img src="assets/images/Diagramaciclosdevidaactivity.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s12">Texto de respaldo</figcaption>  
+            </figure>
+            
+            <figure class="media-figure">
+            <img src="assets/images/naivebayes_probabilidaddespam.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s13">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/naivebayes_result.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s14">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/modelocognitivocode.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s15">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/modelocognitivosalida.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s16">Texto de respaldo</figcaption>  
+            </figure>
+            
+             <figure class="media-figure">
+            <img src="assets/images/Diagramadeflujotictactoe_minimax.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s17">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/MiniMaxRes.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s18">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/multiagentes_geniusotros.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s19">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/arbolesdedesicionsalida.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s20">Texto de respaldo</figcaption>  
+            </figure>
+            
+            <figure class="media-figure">
+            <img src="assets/images/analizadorlexicosalida.png" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s21">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/ejemplofuncionamiento.jpg" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s22">Texto de respaldo</figcaption>  
+            </figure>
+
+            <figure class="media-figure">
+            <img src="assets/images/formulariopagweb.png" alt="Proyecto 1" class="media-img">
+            <figcaption data-i18n="s23">Texto de respaldo</figcaption>  
+            </figure>
+
+
+          </div>
+        </div>
+        <div class="media-block reveal">
+          <h3 class="media-subhead" data-i18n="media_video">Video</h3>
+          <video class="media-video" controls preload="metadata">
+            <source src="assets/videos/adoptree(siembravalores).mp4" type="video/mp4">
+            Your browser does not support the video tag. Add placeholder.mp4 locally.
+          </video>
+          <p class="media-hint" data-i18n="media_vid_hint">Replace assets/videos/placeholder.mp4 with your file.</p>
+        </div>
+        <div class="media-block reveal">
+          <h3 class="media-subhead" data-i18n="media_docs">Documents</h3>
+          <ul class="doc-list">
+                          <!-- para abrir y 
+
+            <li>
+             <a class="doc-link" href="docs/sample-document.txt" download>sample-document.txt</a><span data-i18n="media_doc_li1"> — placeholder in docs/</span>
+            </li>              -->
+
+
+        
+            <li data-i18n="media_doc_li2">Add PDFs or your CV to the docs/ folder and link them here.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 10. CONNECT (social / links only — no form) ========== -->
+    <section id="connect" class="section section-alt connect-section">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <h2 data-i18n="connect_title">Connect</h2>
+          <p class="section-lead" data-i18n="connect_lead">Replace placeholders with your real profiles and email.</p>
+        </header>
+        <ul class="connect-list reveal">
+          <li class="connect-item">
+            <span class="connect-label" data-i18n="connect_email">Email</span>
+            <!-- EDIT: mailto and visible address -->
+            <a class="connect-value" href="contactojesusjairjaramillo@gmail.com">contactojesusjairjaramillo@gmail.com</a>
+          </li>
+          <li class="connect-item">
+            <span class="connect-label" data-i18n="connect_github">GitHub</span>
+            <a class="connect-value" href="none" target="_blank" rel="noopener">+52 833 302 36 65</a>
+          </li>
+          <li class="connect-item">
+            <span class="connect-label" data-i18n="connect_linkedin">LinkedIn</span>
+            <a class="connect-value" href="https://www.linkedin.com/in/jair-j-856653407?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">linkedin.com</a>
+          </li>
+          
+        </ul>
+        <p class="connect-hint" data-i18n="connect_other_hint">Portfolio, blog, or another network — update href in index.html.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="footer_line">jesus jair jaramillo reta — Portfolio </span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/translations.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
