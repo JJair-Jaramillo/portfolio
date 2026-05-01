@@ -328,21 +328,3 @@
 })
 
 ();
-const toggle = document.querySelector(".nav-toggle");
-const nav = document.getElementById("site-nav");
-
-if (toggle && nav) {
-
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    toggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
-  });
-
-  document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("active");
-      toggle.textContent = "☰";
-    });
-  });
-
-}

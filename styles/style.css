@@ -61,27 +61,27 @@ html[data-theme="dark"] {
   }
 
   .site-nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
 
-    position: absolute;
-    top: 100%; /* 👈 clave para tu layout */
-    left: 0;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(320px, 85vw);
 
     background: var(--color-surface);
-    padding: 1rem;
+    padding: 2rem;
 
-    border-top: 1px solid var(--color-border);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
     z-index: 1000;
-
-    max-height: 80vh;
-    overflow-y: auto;
   }
 
-  .site-nav.active {
-    display: flex;
+  .site-nav.is-open {
+    transform: translateX(0);
   }
 
   .nav-link {
@@ -94,7 +94,24 @@ html[data-theme="dark"] {
     border-top: 1px solid var(--color-border);
     padding-top: 1rem;
   }
+}
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 999;
+}
 
+.nav-backdrop.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 html[data-theme="light"] {
   color-scheme: light;
